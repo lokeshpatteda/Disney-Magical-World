@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <title>WALT DISNEY WORLD@INDIA</title>
+        <link rel ="icon" href = disney-d.png type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/9a5d8a09b1.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+         <!--Search script--> 
+          <script>
+              $(function() {
+               $("#myInput").click(function() {
+                if ($("#myInput").val() == "Search our website"){
+                $("#myInput").val(""); 
+               }
+             });
+           });
+          </script>
+          <!-- End Search script--> 
+   </head>
+        <style>
+        .mySlides post {display:none;}
+        </style>
+       
+   <body>
+        <div class="container">
+             <div class="full-width">
+                <a href="index.html"><img src="disney.png" width="200" height="150"></a> 
+    
+                        <div class="float">
+                              <form id="form_id" method="post" name="myform"action="index.html">
+                                  <h2> LOGIN</h2> <span id="hello" style="color:whitesmoke; font-size: x-large;"></span> 
+                                  <i class="fas fa-user" style="font-size:20px;"></i> <input type="text" name="username" id="username" placeholder="Username">
+                                  <i class="fas fa-unlock-alt" style="font-size:20px;"></i> <input type="password"name="password" id="password" placeholder="Password" ><br>
+                                  <button value="login"id="submit" onclick="validate();"><i class="fas fa-sign-in-alt"></i> Login</button>
+                                  <button><a href="registration.html">Register</a></button>
+                                  <button><i class="fas fa-sign-out-alt"></i> Logout</button>
+                              </form>
+                        </div>
+             </div>
+             <nav>
+                 <ul id="myUL">
+                     <li><a href="#"><i class="fas fa-house-damage" ></i> HOME</a></li>
+                     <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">CARTOON</a>
+                            <div class="dropdown-content">
+                              <a href="https://www.youtube.com/watch?v=3BSQ7xnOqnA">The Rio 2</a>
+                              <a href="https://www.youtube.com/watch?v=7jknyqafCVM">Zootopia</a>
+                              <a href="https://www.youtube.com/watch?v=XKcdVYpkPAc">Moana</a>
+                              <a href="https://www.youtube.com/watch?v=36oE0EBeESM">The Lion King</a>
+                              <a href="https://www.youtube.com/watch?v=lD-NcoXJbsU">Aladdin</a>
+                            </div>
+                      </li>      
+                     <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">MOVIES</a>
+                            <div class="dropdown-content">
+                              <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c">Avengers Endgame</a>
+                              <a href="https://www.youtube.com/watch?v=pU8-7BX9uxs">John Wick 3</a>
+                              <a href="https://www.youtube.com/watch?v=ZsBO4b3tyZg">Hellboy</a>
+                              <a href="https://www.youtube.com/watch?v=DYYtuKyMtY8">Spider-Man Far from Home</a>
+                              <a href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Captain Marvel</a>
+                            </div>
+                      </li>      
+                      <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">DUBBED M</a>
+                            <div class="dropdown-content">
+                              <a href="#">Kannada</a>
+                              <a href="#">Telugu</a>
+                              <a href="#">Hindi</a>
+                              <a href="#">Tamil</a>
+                              <a href="#">Malayalam</a>
+                            </div>
+                      <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">KANNADA </a>
+                                    <div class="dropdown-content">
+                                      <a href="https://www.youtube.com/watch?v=jT9QbJt4AUI">SpiderMan:Homecoming</a>
+                                      <a href="https://www.youtube.com/watch?v=WUenCJTVgOg">Terminator: Dark Fate</a>
+                                      <a href="https://www.youtube.com/watch?v=kx1IKEPG7B0">The Fate of the Furious</a>
+                                      <a href="https://www.youtube.com/watch?v=lcwmDAYt22k">Bumblebee</a>
+                                      <a href="https://www.youtube.com/watch?v=9DEJ207Boww">Jurassic World</a>
+                                      <a href="https://www.youtube.com/watch?v=5PSNL1qE6VY">Avatar</a>
+                                    </div>
+                                    <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">TELUGU</a>
+                                            <div class="dropdown-content">
+                                              <a href="https://www.youtube.com/watch?v=3fp3TJXxzCI">Alita:Battle Angel</a>
+                                              <a href="https://www.youtube.com/watch?v=TmKLrtXRj_4z">Aquaman</a>
+                                              <a href="https://www.youtube.com/watch?v=xwZ4sRlmgCw">Jumanji</a>
+                                              <a href="https://www.youtube.com/watch?v=vFJFnIJDcqM">Men In Black</a>
+                                              <a href="https://www.youtube.com/watch?v=i6yBvxB-gP8">Transformers</a>
+                                              <a href="https://www.youtube.com/watch?v=9liL0MSYnTQ">Pacific Rim</a>
+                                            </div>
+                                          </li>
+                     <li><a href="#">ABOUT US</a></li>
+                     <li><a href="#">CONTACT US</a></li>
+                     <li>
+                        <form id="tfnewsearch" method="get" action="ul li a">
+                       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" value="Search our website"></li>  
+                        </form> 
+                 </ul>
+             </nav>
+               <div class="full-width margin-top20px">
+                   <div class="col-7">
+                       <div class="sild">
+                            <img class="mySlides" src="lion.jpeg" width="100%" > 
+                            <img class="mySlides" src="coco.png" width="100%">
+                            <img class="mySlides" src="Tangled.jpg" width="100%" height="50%">
+                       </div>
+                   </div>   
+                   <h6 style="font-family: 'Abril Fatface', cursive;"><marquee direction = "left" behaviover="scroll" loops="2" scroll-dealy="" >The Disney Magical World @ Walt Disney...!!    You Can Watch This Movies On Youtube...!!</marquee></h6> 
+                   <div style="clear: both;"></div>
+                </div>
+                <div class="full-width margin-top20px">
+                        <div class="col-6">
+                            <div class="text">
+                                    <h1 style="font-family: 'Abril Fatface', cursive;">Welcome to Magical Disney World</h1>
+                                    <p class="center">Disney was originally founded on October 16, 1923, by brothers Walt and Roy O.Disney as the Disney Brothers Cartoon Studio; it also operated under the names The Walt Disney Studio and Walt Disney Productions before officially changing its name to The Walt Disney Company in 1986. The company established itself as a leader in the American animation industry before diversifying into live-action film production, television, and theme parks.</p>
+                                    <p class="center1">Since the 1980s, Disney has created and acquired corporate divisions in order to market more mature content than is typically associated with its flagship family-oriented brands. The company is known for its film studio division, The Walt Disney Studios, which includes Walt Disney Pictures, Walt Disney Animation Studios, Pixar, Marvel Studios, Lucasfilm, 20th Century Fox, Fox 2000 Pictures, Fox Searchlight Pictures, and Blue Sky Studios.</p> 
+                                    <p class="center1">Disney's other main divisions are Disney Media Networks, Disney Parks, Experiences and Products, and Walt Disney Direct-to-Consumer & International.<p class="center1"> Disney also owns and operates the ABC broadcast network; cable television networks such as Disney Channel, ESPN, Freeform, FX, and National Geographic; publishing, merchandising, music, and theater divisions; and Walt Disney Parks and Resorts, a group of 14 theme parks around the world.</p>
+        
+                            </div>
+
+                        </div>   
+                        <div class="col-4">
+                            <div class="textside">
+                                <h3 style="font-family: 'Cinzel', serif;">The Walt Disney Company</h3>  
+                                <img src="Disney studio.jpg" width="200" height="150" class="show"> 
+                            </div>
+                            <div class="textside margin-top20px">
+                                    <h3 style="font-family: 'Cinzel', serif;">The Walt Disney Company</h3>
+                                    <p style="font-family: 'Cedarville Cursive', cursive;"><b>Formerly:</b><br>
+                                        Disney Brothers Cartoon Studio(1923–1926)<br>
+                                        The Walt Disney Studio (1926–1929)<br>
+                                        Walt Disney Productions (1929–1986)<br>
+                                        <b>Industry:</b>Mass mediaEntertainment <br><b>Subsidiaries:</b> Pixar, Hulu, ESPN Inc., Marvel Entertainment </p> 
+                                </div>
+                        </div>
+                        <div class="movies">
+                          <div class="col-2"><a href="https://www.whats-on-netflix.com/coming-soon/disney-movies-coming-to-netflix-in-2018/"><img src="netflix.png" width="285" height="170"></a></div>
+                          <div class="col-2"><a href="https://www.youtube.com/watch?v=GV1PizuMbaE"><img src="movie rew.jpg" width="285" height="170"></a></div>
+                          <div class="col-2"><a href="https://butfirstjoy.com/d23-expo-2019-movie-announcements/"><img src="New-Disney.png" width="285" height="170"></a></div>
+                          <div class="col-2"><a href="https://www.deseret.com/2018/12/5/20660435/amy-iverson-want-to-stream-new-disney-movies-you-ll-need-this-app-in-2019"><img src="keep me.jpeg" width="285" height="170"></a></div>
+                       </div>
+                       <div class="full-width margin-top20px">
+                        <div class="col-9">
+                            <h4 style="margin-top:8em; margin-left: 3em; font-family: 'Great Vibes', cursive;"><b> The Most Anticipated New Disney movies of 2019 <br> <h style="font-family: 'Dancing Script', cursive; font-size:3em;"> The Maleficent</h><h style="animation: blink 1s infinite;font-size:2.5em;"> |</h></h4>
+                              <a href="https://www.youtube.com/watch?v=xUYgIDWjVhk"><input type="submit" value=" Watch Here" id="most"></a>
+                        </div>   
+                     </div>
+                      <div class="lastpic">
+                        <div class="col-3"><img src="carnveale disney.jpg" width="398" height="250"></div>
+                        <div class="col-3" id="midel"><img src="original.jpg" width="398" height="250"></div>
+                        <div class="col-3" id="midel2"><img src="disny billd.jpg" width="398" height="250"></div>
+                      </div>
+                       <div style="clear: both;"></div>
+                     </div>
+                          
+                     <div class="full-width footer">
+                         <p class="under">Disney Magical World</p>
+                         <ol>
+                                <li>Terms & Conditions</li>
+                                <li>Privacy Policy</li>
+                                <li>Assistance</li>
+                                <li>Ownership</li>
+                                <li>Research</li>
+                                <li>Technology</li>
+                                <li>Join the Conversation</li>
+                              </ol>
+                              <div class="float1">
+                              <i class="fab fa-facebook-square"></i> facebook<br>
+                              <i class="fab fa-twitter"></i> twitter<br>
+                              <i class="fab fa-youtube"></i> Youtube<br>
+                              </div>
+                              <p class="bor">© Disneymagicalworld@disnet.in.co <br>Registered Office: Abbey Road, Whitley, Coventry CV3 4LF <br>Registered in England No: 1672070 </p>                
+                     </div>
+        </div> 
+
+        <!--Prompt script--> 
+          <script>
+            
+            var txt;
+            var person = prompt("Please enter your name:","Disney Magical World");
+            if (person == null || person == "") {
+              txt = "You cancelled the Name.";
+            } else {
+              txt = "Welcome " + person;
+            }
+            document.getElementById("hello").innerHTML =  txt;
+          
+          </script>
+          <!-- End Prompt script--> 
+          <!--Banner Slides script--> 
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000);
+                }
+              //<!--End Banner Slides script--> 
+              //<!--Login form script--> 
+              function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == null || username == "") {
+                alert("Please enter the username.");
+                return false;
+            }
+            if (password == null || password == "") {
+                alert("Please enter the password.");
+                return false;
+            }
+             alert('Login successful Welcome'+ username);
+              
+            }
+            
+                </script>  
+                <!--End Login form script--> 
+                
+   </body>
+</html>

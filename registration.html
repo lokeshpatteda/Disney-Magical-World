@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION YOUR ACCOUNT</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<style>
+ body
+{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background: url("background.jpg");
+}
+.container
+{
+position: relative;
+width: 95%;
+margin: 0 auto;
+//background: rgb(247, 4, 4);
+padding: 15px;
+box-sizing: border-box;
+min-height: 200px;
+background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(300,0,0,1))
+
+}
+h1
+{
+    
+    text-align: center;
+}
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+h2{
+text-align: center;
+font-size: 24px;
+font-family: 'Dancing Script', cursive;
+}
+h1{
+    
+    font-family: 'Dancing Script', cursive;
+}
+hr{
+margin-bottom: 30px;
+}
+
+div.main{
+width: 320px;
+float:left;
+padding: 10px 55px 40px;
+background-color: rgba(170, 34, 34, 0.65);
+border: 15px solid rgb(134, 58, 58);
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+}
+input[type=text],[type=password] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px rgb(8, 8, 8);
+border: 2px solid rgb(0, 0, 0);
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #d4cbcb;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+#register {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid rgb(44, 158, 15);
+padding: 7px 35px;
+color: white;
+text-shadow: 0px 1px 0px rgb(52, 109, 19);
+font-weight: bold;
+border-radius: 2px;
+cursor: pointer;
+width: 100%;
+}
+#register:hover{
+background: linear-gradient(#6bf036 5%, #22abe9 100%);
+}
+.main {
+     margin-left: 20em;
+}
+
+@media (max-width: 900px)
+{
+    .container
+    {
+        width: 100%;
+    }
+ .main
+    {
+      padding-right: 300px; 
+      float: left;
+      width: 100%; 
+    }
+}
+@media (max-width: 500px)
+{
+    .main
+    {
+        margin-right: 90em;
+        float: left;
+        width: 100%; 
+    }
+}
+</style>
+<body>
+<div class="container">
+   <a href="index.html"><img src="disney.png" width="200" height="150"></a> 
+   
+   <div class="container center">
+        <h1>Hello Disney World</h1>
+        <div class="main">
+        <form class="form" method="post" action="#">
+        <h2>Create Registration</h2>
+        <label>Name :</label>
+        <input type="text" name="dname" id="name">
+        <label>Email :</label>
+        <input type="text" name="demail" id="email">
+        <label>Password :</label>
+        <input type="password" name="password" id="password">
+        <label>Confirm Password :</label>
+        <input type="password" name="cpassword" id="cpassword">
+        <input type="button" name="register" id="register" value="Register">
+        </form>
+</div>
+<script>
+   $(document).ready(function() {
+$("#register").click(function() {
+var name = $("#name").val();
+var email = $("#email").val();
+var password = $("#password").val();
+var cpassword = $("#cpassword").val();
+if (name == '' || email == '' || password == '' || cpassword == '') {
+alert("Please fill all fields...!!!!!!");
+} else if ((password.length) < 8) {
+alert("Password should atleast 8 character in length...!!!!!!");
+} else if (!(password).match(cpassword)) {
+alert("Your passwords don't match. Try again?");
+} else {
+$.post("register.php", {
+name1: name,
+email1: email,
+password1: password
+}, function(data) {
+if (data == 'You have Successfully Registered.....') {
+$("form")[0].reset();
+}
+alert(data);
+});
+}
+});
+});
+</script>
+</body>
+</html>
